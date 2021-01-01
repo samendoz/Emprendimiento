@@ -5187,3 +5187,16 @@ fieldset p{
 	margin-left: 15%;
 	margin-bottom: 30px;
 }
+.botonr{
+	text-align:center;
+	background: #7B7B7B;
+	color: #fff;
+	border: none;
+	display: block;
+	width: 100%;
+	outline: none;
+	-webkit-appearance: none;
+	padding: 8px 15px 9px 15px;
+	cursor: pointer;
+	font-size: 17px;
+}
