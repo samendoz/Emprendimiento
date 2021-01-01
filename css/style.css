@@ -225,10 +225,8 @@ label{
 .ban-top{
 	background:#000;
     padding: 0px 0; 
-    position: sticky;
 }
 .dropdown-menu.columns-3 {
-    min-width: 700px;
     padding: 30px 30px;
 }
 .multi-gd-img img{
@@ -5095,10 +5093,7 @@ td.invert-image a img {
 }
 }
 /*-- //responsive media queries --*/
-.ban-top{
-    position: -webkit-sticky;
-position: sticky;
-}
+
 .tituloB{
 	width: 100%;
 	height: 100px;
@@ -5146,4 +5141,34 @@ position: sticky;
 
 	50%{margin-left: -100%;}
 	100%{margin-left: -100%;}
+}
+
+legend{
+	width: auto; 
+	border-bottom: none; 
+		
+} 
+fieldset{
+	border: 1px solid #000000;
+	margin: 100px;
+	padding: 40px;
+	margin.top: 10px;
+}
+#fname, #lname{
+	width: 500px;
+}
+fieldset p{
+	margin: 30px;
+}
+#boton{
+	margin-left: 45%;
+	border-radius: 6px;
+	width:300x;
+        height:75px;
+	background: #fda30e;
+	border: none;
+	padding: 13px 20px 14px;
+	font-size: 18px;	
+	outline: none;
+	text-transform: uppercase;
 }
