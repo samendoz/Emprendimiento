@@ -5152,7 +5152,7 @@ fieldset{
 	border: 1px solid #000000;
 	margin: 100px;
 	padding: 40px;
-	margin.top: 10px;
+	margin-top: 10px;
 }
 #fname, #lname{
 	width: 500px;
@@ -5171,4 +5171,19 @@ fieldset p{
 	font-size: 18px;	
 	outline: none;
 	text-transform: uppercase;
+}
+.bot{
+	display: flex;
+	justify-content: center;
+	flex-direction: row
+}
+.susc{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	margin-bottom: 30px;
+}
+#terminos{
+	margin-left: 15%;
+	margin-bottom: 30px;
 }
