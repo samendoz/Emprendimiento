@@ -470,6 +470,7 @@ a.simpleCart_empty {
 }
 .callbacks li {
   position: absolute;
+  height: 600px;
   width: 100%;
   left: 0;
   top: 0;
@@ -1264,9 +1265,11 @@ h2.resp-accordion {
     position: relative;
     box-shadow: 0px 0px 15px 0px #D6D6D6;
     padding-bottom: 20px;
+    height: 450px;
 }
 .men-thumb-item {
     position: relative;
+    height: 280px;
 }
 .item-info-product {
     text-align: center;
@@ -1416,6 +1419,9 @@ h2.resp-accordion {
     color: #fff;
 }
 /*-- //effect --*/
+.item-info-product h4{
+  height: 30px;
+}
 .item-info-product h4 a {
     font-size: 18px;
     color: #FDA30E;
@@ -1678,14 +1684,18 @@ padding-top:110px;
 /*-- //coupons --*/
 /*-- contact --*/
 .page-head {
-    background: url(../images/ba2.jpg) no-repeat center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    -moz-background-size: cover;
+  align-items: center;
+    background: url(../images/Local2/LOCAL2-ALE/logotipo1.png) no-repeat center;
+    background-size: auto;
+    -webkit-background-size: auto;
+    -o-background-size: auto;
+    -ms-background-size: auto;
+    -moz-background-size: auto;
     min-height: 217px;
+    height: auto;
+    width: 100%;
     padding-top: 85px;
+    margin-top: 15px;
 }
 .page-head h3 {
     color: #FDA30E;

@@ -1267,6 +1267,7 @@ h2.resp-accordion {
 }
 .men-thumb-item {
     position: relative;
+    height: 300px;
 }
 .item-info-product {
     text-align: center;
