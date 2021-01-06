@@ -1,0 +1,22 @@
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+        <app-logo></app-logo>
+        <app-navbar></app-navbar>
+    </div>
+    <div id ="ctn-bar-search">		
+  	<input type="text" id="inputSearch" placeholder="¿Que desea buscar?" title="Ingresa">
+  </div>
+  
+  <ul id="box-search">
+		
+   </ul>
+   
+   <div id="cover-ctn-search">
+   </div>
+</header><!-- End Header -->
+luego de hero main
+<div id="preloader"></div>
+<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+<div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>

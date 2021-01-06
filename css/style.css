@@ -5143,6 +5143,17 @@ td.invert-image a img {
 	100%{margin-left: -100%;}
 }
 
+#cuponC{
+	width: 611px;
+	position: relative;
+	left: 10%;
+	top: 100px;
+}
+#cuponPeq{
+	widht: 300px;
+	height: 100px;
+}
+
 legend{
 	width: auto; 
 	border-bottom: none; 
@@ -5217,3 +5228,13 @@ fieldset p{
 .genero p input{
   width: 5px;
 }
+#imagenT{
+	width: 1000px;
+	height: 591px;
+}
+#imagenP{
+	width: 276px;
+	height: 286px;
+}
+
+
