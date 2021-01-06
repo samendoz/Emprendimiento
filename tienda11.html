@@ -31,6 +31,37 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'>
 <script src="js/jquery.easing.min.js"></script>
+
+
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/ddsmoothmenu.js">
+
+/***********************************************
+* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "top_nav", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+</script>
+
 </head>
 <body>
 <!-- header -->
@@ -105,47 +136,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
 				  <ul class="nav navbar-nav menu__list">
 					<li class="active menu__item menu__item--current"><a class="menu__link" href="pagCliente.html">INICIO <span class="sr-only">(current)</span></a></li>
-					<li class="dropdown menu__item">
-						<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CATEGORIAS<span class="caret"></span></a>
-							<ul class="dropdown-menu multi-column columns-3">
-								<div class="row">
-									<!--div class="col-sm-6 multi-gd-img1 multi-gd-text ">
-										<a href="mens.html"><img src="images/woo1.jpg" alt=" "/></a>
-									</div-->
-									<div class="col-sm-3 multi-gd-img">
-										<ul class="multi-column-dropdown">
-											<li><a href="mens.html">Ropa</a></li>
-											<li><a href="mens.html">Vestidos</a></li>
-											<li><a href="mens.html">Zapatos</a></li>
-											<li><a href="mens.html">Relojes</a></li>
-											<li><a href="mens.html">Accesorios</a></li>
-											<li><a href="mens.html">Mochilas</a></li>
-											<li><a href="mens.html">Sombreros</a></li>
-										</ul>
-									</div>
-									<!--div class="col-sm-3 multi-gd-img">
-										<ul class="multi-column-dropdown">
-											<li><a href="mens.html">Jewellery</a></li>
-											<li><a href="mens.html">Sunglasses</a></li>
-											<li><a href="mens.html">Perfumes</a></li>
-											<li><a href="mens.html">Beauty</a></li>
-											<li><a href="mens.html">Shirts</a></li>
-											<li><a href="mens.html">Sunglasses</a></li>
-											<li><a href="mens.html">Swimwear</a></li>
-										</ul>
-									</div-->
-									<div class="clearfix"></div>
-								</div>
-							</ul>
-					</li>
-					<li class="dropdown menu__item">
+										<li class="dropdown menu__item">
 						<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TIENDAS ASOCIADAS <span class="caret"></span></a>
 							<ul class="dropdown-menu multi-column columns-3">
 								<div class="row">
-									<div class="col-sm-3 multi-gd-img">
+									<div class="col-sm-12 multi-gd-img">
 										<ul class="multi-column-dropdown">
-											<li><a href="tienda1.html">Caroline Boutique</a></li>
-											<li><a href="tienda2.html">Tienda2</a></li>
+											<li><a href="tienda1.html">Caroline </a></li>
+											<li><a href="tienda11.html">S. Shoes</a></li>
 										</ul>
 									</div>
 									<!--div class="col-sm-3 multi-gd-img">
@@ -159,9 +157,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<li><a href="womens.html">Swimwear</a></li>
 										</ul>
 									</div-->
-									<div class="col-sm-6 multi-gd-img multi-gd-text ">
+									<!--div class="col-sm-3 multi-gd-img multi-gd-text ">
 										<!--a href="womens.html"><img src="images/woo.jpg" alt=" "/></a-->
-									</div>
+									</div-->
 									<div class="clearfix"></div>
 								</div>
 							</ul>
@@ -194,413 +192,143 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- banner -->
 <!-- //banner -->
 <!-- mens -->
-<div class="men-wear">
-	<div class="container">
-		<div class="col-md-4 products-left">
-			<div class="filter-price">
-				<h3>Ordenar por precio</h3>
-					<ul class="dropdown-menu6">
-						<li>                
-							<div id="slider-range"></div>							
-							<input type="text" id="amount" style="border: 0; color: #ffffff; font-weight: normal;" />
-						</li>			
-					</ul>
-							<!---->
-							<script type='text/javascript'>//<![CDATA[ 
-							$(window).load(function(){
-							 $( "#slider-range" ).slider({
-										range: true,
-										min: 0,
-										max: 200,
-										values: [ 40, 70 ],
-										slide: function( event, ui ) {  $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-										}
-							 });
-							$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) + " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+<!--div id="templatemo_body_wrapper"-->
+<!--div id="templatemo_wrappe"-->
 
-							});//]]>  
+<div id="templatemo_main">
+	<div id="logo">
+		<img id ="logoS" src="images/product/logo.png" alt="Shoes 2" />
+	</div>
+    	<div id="sidebar" class="float_l">
+        	<div class="sidebar_box"><span class="bottom"></span>
+            	<h3>Categorias</h3>   
+                <div class="content"> 
+                	<ul class="sidebar_list">
+                    	<li class="first"><a href="#">Sed eget purus</a></li>
+                        <li><a href="#">Vestibulum eleifend</a></li>
+                        <li><a href="#">Nulla odio ipsum</a></li>
+                        <li><a href="#">Suspendisse posuere</a></li>
+                        <li><a href="#">Nunc a dui sed</a></li>
+                        <li><a href="#">Curabitur ac mauris</a></li>
+                        <li><a href="#">Mauris nulla tortor</a></li>
+                        <li><a href="#">Nullam ultrices</a></li>
+                        <li><a href="#">Nulla odio ipsum</a></li>
+                        <li><a href="#">Suspendisse posuere</a></li>
+                        <li><a href="#">Nunc a dui sed</a></li>
+                        <li><a href="#">Curabitur ac mauris</a></li>
+                        <li><a href="#">Mauris nulla tortor</a></li>
+                        <li><a href="#">Nullam ultrices</a></li>
+                        <li class="last"><a href="#">Sed eget purus</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar_box"><span class="bottom"></span>
+            	<h3>Mas vendidos </h3>   
+                <div class="content"> 
+                	<div class="bs_box">
+                    	<a href="#"><img src="images/product/02.jpg" alt="image"  with="66" height="66" /></a>
+                        <h4><a href="#">Donec nunc nisl</a></h4>
+                        <p class="price">$10</p>
+                        <div class="cleaner"></div>
+                    </div>
+                    <div class="bs_box">
+                    	<a href="#"><img src="images/product/01.jpg" alt="image"  with="66" height="66"/></a>
+                        <h4><a href="#">Lorem ipsum dolor sit</a></h4>
+                        <p class="price">$12</p>
+                        <div class="cleaner"></div>
+                    </div>
+                    <div class="bs_box">
+                    	<a href="#"><img src="images/product/03.jpg" alt="image"  with="66" height="66"/></a>
+                        <h4><a href="#">Phasellus ut dui</a></h4>
+                        <p class="price">$20</p>
+                        <div class="cleaner"></div>
+                    </div>
+                    <div class="bs_box">
+                    	<a href="#"><img src="images/product/04.jpg" alt="image"  with="66" height="66"/></a>
+                        <h4><a href="#">Vestibulum ante</a></h4>
+                        <p class="price">$8</p>
+                        <div class="cleaner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="float_r">
+        	<div id="slider-wrapper">
+                <div id="slider" class="nivoSlider">
+                    <img src="images/cupon.png" alt="" title="Cupon por tu compran" id="cupon"/>
+                    <a href="#"><img src="images/slider/01.jpg" alt="" title="Ejemplo de caption" /></a>
+                    <img src="images/slider/03.jpg" alt="" />
+                    <img src="images/slider/04.jpg" alt="" title="#htmlcaption" />
+                </div>
+                <div id="htmlcaption" class="nivo-html-caption">
+                    <strong>Obten tu cupon</strong> para comprar en tienda Caroline <a href="#"></a>.
+                </div>
+            </div>
+            <script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+            <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+            <script type="text/javascript">
+            $(window).load(function() {
+                $('#slider').nivoSlider();
+            });
+            </script>
+        	<h1>Nuevos productos</h1>
+            <div class="product_box">
+	            <h3>Ut eu feugiat</h3>
+            	<a href="#"><img src="images/product/01.jpg" alt="Shoes 1" /></a>
+                <!--p>Nulla rutrum neque vitae erat condimentum eget malesuada.</p-->
+                <p class="product_price">$ 100</p>
+                <a href="#" class="addtocart"></a>
+                <a href="#" class="detail"></a>
+            </div>        	
+            <div class="product_box">
+            	<h3>Curabitur et turpis</h3>
+            	<a href="#"><img src="images/product/02.jpg" alt="Shoes 2" /></a>
+                <!--p>Sed congue, erat id congue vehicula. Validate <a href="http://validator.w3.org/check?uri=referer" rel="nofollow">XHTML</a> &amp; <a href="http://jigsaw.w3.org/css-validator/check/referer" rel="nofollow">CSS</a>.</p-->
+              <p class="product_price">$ 80</p>
+                <a href="#" class="addtocart"></a>
+                <a href="#" class="detail"></a>
+            </div>        	
+            <div class="product_box no_margin_right">
+            	<h3>Mauris consectetur</h3>
+            	<a href="#"><img src="images/product/03.jpg" alt="Shoes 3" /></a>
+                <!--p>Morbi non risus vitae est vestibulum tincidunt ac eget metus.</p-->
+              <p class="product_price">$ 60</p>
+                <a href="#" class="addtocart"></a>
+                <a href="#" class="detail"></a>
+            </div>   
+            
+            <div class="cleaner"></div>
+                 	
+<div class="product_box">
+            	<h3>Proin volutpat</h3>
+           	<a href="#"><img src="images/product/04.jpg" alt="Shoes 4" /></a>
+            <!--p>Sed semper euismod dolor sit amet interdum. Phasellus in mi eros.</p-->
+      <p class="product_price">$ 220</p>
+                <a href="#" class="addtocart"></a>
+                <a href="#" class="detail"></a>
+            </div>        	
+            <div class="product_box">
+	            <h3>Aenean tempus</h3>
+            	<a href="#"><img src="images/product/05.jpg" alt="Shoes 5" /></a>
+                <!--p>Maecenas porttitor erat quis leo pellentesque molestie.</p-->
+              <p class="product_price">$ 180</p>
+                <a href="#" class="addtocart"></a>
+                <a href="#" class="detail"></a>
+            </div>        	
+            <div class="product_box no_margin_right">
+            	<h3>Nulla luctus urna</h3>
+            	<a href="#"><img src="images/product/06.jpg" alt="Shoes 6" /></a>
+                <!--p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p-->
+                <p class="product_price">$ 160</p>
+                <a href="#" class="addtocart"></a>
+                <a href="#" class="detail"></a>
+            </div>        	
+        </div> 
+        <div class="cleaner"></div>
+    </div> <!-- END of templatemo_main -->
+  </div>
+    </div>
 
-							</script>
-						<script type="text/javascript" src="js/jquery-ui.js"></script>
-					 <!---->
-			</div>
-			<div class="css-treeview">
-				<h4>Categorias</h4>
-				<ul class="tree-list-pad">
-					<li><input type="checkbox" checked="checked" id="item-0" /><label for="item-0"><span></span>Hombre</label>
-						<ul>
-							<li><input type="checkbox" id="item-0-0" /><label for="item-0-0">Casual</label>
-								<ul>
-									<li><a href="mens.html">Camisas</a></li>
-									<li><a href="mens.html">Gorras</a></li>
-									<li><a href="mens.html">Zapatos</a></li>
-									<li><a href="mens.html">Pantalones</a></li>
-									<li><a href="mens.html">Lentes</a></li>
-								</ul>
-							</li>
-							<li><input type="checkbox"  id="item-0-1" /><label for="item-0-1">Verano</label>
-								<ul>
-									<li><a href="mens.html">Camisas</a></li>
-									<li><a href="mens.html">Gorras</a></li>
-									<li><a href="mens.html">Zapatos</a></li>
-									<li><a href="mens.html">Pantalones</a></li>
-									<li><a href="mens.html">Lentes</a></li>
-								</ul>
-							</li>
-							<li><input type="checkbox"  id="item-0-2" /><label for="item-0-2">Formal</label>
-								<ul>
-									<li><a href="mens.html">Camisas</a></li>
-									<li><a href="mens.html">Sombreros/a></li>
-									<li><a href="mens.html">Zapatos</a></li>
-									<li><a href="mens.html">Pantalones</a></li>
-									<li><a href="mens.html">Lentes</a></li>
-									<li><a href="mens.html">Sacos</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li><input type="checkbox" checked="checked" id="item-2" /><label for="item-2">Promociones y Ofertas</label>
-						<ul>
-							<li><input type="checkbox"  id="item-2-0" /><label for="item-2-0">Mercaderia en Descuento</label>
-								<ul>
-									<li><a href="mens.html">Camisetas</a></li>
-									<li><a href="mens.html">Pantalones</a></li>
-									<li><a href="mens.html">Zapatos</a></li>
-									<li><a href="mens.html">Trajes</a></li>
-								</ul>
-							</li>
-							
-						</ul>
-					</li>
-				</ul>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-		<div class="col-md-8 products-right">
-			<h5>Comparar Productos(0)</h5>
-			<div class="sort-grid">
-				<div class="sorting">
-					<h6>Ordenar Por</h6>
-					<select id="country1" onchange="change_country(this.value)" class="frm-field required sect">
-						<option value="null">Defecto</option>
-						<option value="null">Nombre(A - Z)</option> 
-						<option value="null">Nombre(Z - A)</option>
-						<option value="null">Precio(High - Low)</option>
-						<option value="null">Precio(Low - High)</option>	
-						<option value="null">Modelo(A - Z)</option>
-						<option value="null">Modelo(Z - A)</option>					
-					</select>
-					<div class="clearfix"></div>
-				</div>
-				<div class="sorting">
-					<h6>Mostrando</h6>
-					<select id="country2" onchange="change_country(this.value)" class="frm-field required sect">
-						<option value="null">7</option>
-						<option value="null">14</option> 
-						<option value="null">28</option>					
-						<option value="null">35</option>								
-					</select>
-					<div class="clearfix"></div>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-				<div class="col-md-4 product-men no-pad-men">
-					<div class="men-pro-item simpleCart_shelfItem">
-						<div class="men-thumb-item">
-							<img src="images/Local2/LOCAL2-ALE/Camisetaazul-CarolineBoutique.jpg" alt="" class="pro-image-front">
-							<img src="images/Local2/LOCAL2-ALE/Camisetaazul-CarolineBoutique.jpg" alt="" class="pro-image-back">
-										<div class="men-cart-pro">
-											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Visualizar</a>
-											</div>
-										</div>
-										<span class="product-new-top">Nuevo</span>
-										
-						</div>
-						<div class="item-info-product ">
-									<h4><a href="single.html">Camiseta Azul Bolsillo Rojo</a></h4>
-									<div class="info-product-price">
-										<span class="item_price">$45.99</span>
-										<del>$69.71</del>
-									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Añadir al carro</a>									
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 product-men no-pad-men">
-					<div class="men-pro-item simpleCart_shelfItem">
-						<div class="men-thumb-item">
-							<img src="images/Local2/LOCAL2-ALE/CamisetaCombinada.Hombre-CarolineBoutique.jpg" alt="" class="pro-image-front">
-							<img src="images/Local2/LOCAL2-ALE/CamisetaCombinada.Hombre-CarolineBoutique.jpg" alt="" class="pro-image-back">
-										<div class="men-cart-pro">
-											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Visualizar</a>
-											</div>
-										</div>
-										<span class="product-new-top">Nuevo</span>
-										
-						</div>
-						<div class="item-info-product ">
-									<h4><a href="single.html">Camiseta Combinada Blanca/Negra</a></h4>
-									<div class="info-product-price">
-										<span class="item_price">$45.99</span>
-										<del>$69.71</del>
-									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Añadir al carro</a>									
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 product-men no-pad-men">
-					<div class="men-pro-item simpleCart_shelfItem">
-						<div class="men-thumb-item">
-							<img src="images/Local2/LOCAL2-ALE/Camisetamangalargablanca.Hombre-CarolineBoutique.jpg" alt="" class="pro-image-front">
-							<img src="images/Local2/LOCAL2-ALE/Camisetamangalargablanca.Hombre-CarolineBoutique.jpg" alt="" class="pro-image-back">
-										<div class="men-cart-pro">
-											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Visualizar</a>
-											</div>
-										</div>
-										<span class="product-new-top">Nuevo</span>
-										
-						</div>
-						<div class="item-info-product ">
-									<h4><a href="single.html">Camisa Manga Larga Blanca</a></h4>
-									<div class="info-product-price">
-										<span class="item_price">$45.99</span>
-										<del>$69.71</del>
-									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Añadir al carro</a>									
-						</div>
-					</div>
-				</div>
-				
-				<div class="clearfix"></div>
-		</div>
-		<div class="clearfix"></div>
-		<div class="single-pro">
-			
-			<div class="col-md-3 product-men">
-				<div class="men-pro-item simpleCart_shelfItem">
-					<div class="men-thumb-item">
-						<img src="images/Local2/LOCAL2-ALE/BlazerAzulInformal.Hombre.CarolineBoutique.jpg" alt="" class="pro-image-front">
-						<img src="images/Local2/LOCAL2-ALE/BlazerAzulInformal.Hombre.CarolineBoutique.jpg" alt="" class="pro-image-back">
-							<div class="men-cart-pro">
-								<div class="inner-men-cart-pro">
-									<a href="single.html" class="link-product-add-cart">Visualizar</a>
-								</div>
-							</div>
-							<span class="product-new-top">Nuevo</span>				
-					</div>
-					<div class="item-info-product ">
-						<h4><a href="single.html">Blazer Azul Informal</a></h4>
-						<div class="info-product-price">
-							<span class="item_price">$45.99</span>
-							<del>$69.71</del>
-						</div>
-						<a href="#" class="item_add single-item hvr-outline-out button2">Añadir al carro</a>									
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 product-men">
-				<div class="men-pro-item simpleCart_shelfItem">
-					<div class="men-thumb-item">
-						<img src="images/a2.png" alt="" class="pro-image-front">
-						<img src="images/a2.png" alt="" class="pro-image-back">
-							<div class="men-cart-pro">
-								<div class="inner-men-cart-pro">
-									<a href="single.html" class="link-product-add-cart">Visualizar</a>
-								</div>
-							</div>
-							<span class="product-new-top">Nuevo</span>				
-					</div>
-					<div class="item-info-product ">
-						<h4><a href="single.html">Combo Blazer Azul - Camisa Blanca</a></h4>
-						<div class="info-product-price">
-							<span class="item_price">$45.99</span>
-							<del>$69.71</del>
-						</div>
-						<a href="#" class="item_add single-item hvr-outline-out button2">Añadir al carro</a>									
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 product-men">
-				<div class="men-pro-item simpleCart_shelfItem">
-					<div class="men-thumb-item">
-						<img src="images/Local2/LOCAL2-ALE/CamisetaNegraPanda.Hombre-CarolineBoutique.jpg" alt="" class="pro-image-front">
-						<img src="images/Local2/LOCAL2-ALE/CamisetaNegraPanda.Hombre-CarolineBoutique.jpg" alt="" class="pro-image-back">
-							<div class="men-cart-pro">
-								<div class="inner-men-cart-pro">
-									<a href="single.html" class="link-product-add-cart">Visualizar</a>
-								</div>
-							</div>
-							<span class="product-new-top">Nuevo</span>				
-					</div>
-					<div class="item-info-product ">
-						<h4><a href="single.html">Camiseta Manga Larga Panda</a></h4>
-						<div class="info-product-price">
-							<span class="item_price">$45.99</span>
-							<del>$69.71</del>
-						</div>
-						<a href="#" class="item_add single-item hvr-outline-out button2">Añadir al carro</a>									
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 product-men">
-				<div class="men-pro-item simpleCart_shelfItem">
-					<div class="men-thumb-item">
-						<img src="images/Local2/LOCAL2-ALE/Chaquetaverdemilitar.Hombre-CarolineBoutique.jpg" alt="" class="pro-image-front">
-						<img src="images/Local2/LOCAL2-ALE/Chaquetaverdemilitar.Hombre-CarolineBoutique.jpg" alt="" class="pro-image-back">
-							<div class="men-cart-pro">
-								<div class="inner-men-cart-pro">
-									<a href="single.html" class="link-product-add-cart">Añadir al carro</a>
-								</div>
-							</div>
-							<span class="product-new-top">Nuevo</span>				
-					</div>
-					<div class="item-info-product ">
-						<h4><a href="single.html">Chaqueta Verde Est. Militar</a></h4>
-						<div class="info-product-price">
-							<span class="item_price">$45.99</span>
-							<del>$69.71</del>
-						</div>
-						<a href="#" class="item_add single-item hvr-outline-out button2">Añadir al carro</a>									
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 product-men yes-marg">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="images/g2.png" alt="" class="pro-image-front">
-									<img src="images/g2.png" alt="" class="pro-image-back">
-										<div class="men-cart-pro">
-											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Visualizar</a>
-											</div>
-										</div>
-										<span class="product-new-top">Nuevo</span>
-										
-								</div>
-								<div class="item-info-product ">
-									<h4><a href="single.html">Chaleco</a></h4>
-									<div class="info-product-price">
-										<span class="item_price">$45.99</span>
-										<del>$69.71</del>
-									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Añadir al carro</a>									
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3 product-men yes-marg">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="images/ep4.png" alt="" class="pro-image-front">
-									<img src="images/ep4.png" alt="" class="pro-image-back">
-										<div class="men-cart-pro">
-											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Visualizar</a>
-											</div>
-										</div>
-										<span class="product-new-top">Nuevo</span>
-										
-								</div>
-								<div class="item-info-product ">
-									<h4><a href="single.html">Relojes</a></h4>
-									<div class="info-product-price">
-										<span class="item_price">$119.99</span>
-										<del>$150.71</del>
-									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Añadir al carro</a>									
-								</div>
-							</div>
-						</div>
-			<div class="col-md-3 product-men yes-marg">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="images/mw2.png" alt="" class="pro-image-front">
-									<img src="images/mw2.png" alt="" class="pro-image-back">
-										<div class="men-cart-pro">
-											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Visualizar</a>
-											</div>
-										</div>
-										<span class="product-new-top">Nuevo</span>
-										
-								</div>
-								<div class="item-info-product ">
-									<h4><a href="single.html">Camisetas</a></h4>
-									<div class="info-product-price">
-										<span class="item_price">$45.99</span>
-										<del>$69.71</del>
-									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Añadir al carro</a>									
-								</div>
-							</div>
-						</div>
-			<div class="col-md-3 product-men yes-marg">
-							<div class="men-pro-item simpleCart_shelfItem">
-								<div class="men-thumb-item">
-									<img src="images/g2.png" alt="" class="pro-image-front">
-									<img src="images/g2.png" alt="" class="pro-image-back">
-										<div class="men-cart-pro">
-											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Visualizar</a>
-											</div>
-										</div>
-										<span class="product-new-top">Nuevo</span>
-										
-								</div>
-								<div class="item-info-product ">
-									<h4><a href="single.html"> Camisas</a></h4>
-									<div class="info-product-price">
-										<span class="item_price">$45.99</span>
-										<del>$69.71</del>
-									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Añadir al carro</a>									
-								</div>
-							</div>
-						</div>
-			<div class="clearfix"></div>
-		</div>
-		<div class="pagination-grid text-right">
-			<ul class="pagination paging">
-				<li><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-				<li><a href="tienda1.html">1</a></li>
-				<li class="active"><a href="#">2<span class="sr-only">(current)</span></a></li>
-				<li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
-			</ul>
-		</div>
-	</div>
-</div>	
-<!-- //mens -->
-<!-- //product-nav -->
-<!--div class="coupons">
-	<div class="container">
-		<div class="coupons-grids text-center">
-			<div class="col-md-3 coupons-gd">
-				<h3>Compra tu producto de manera simple</h3>
-			</div>
-			<div class="col-md-3 coupons-gd">
-				<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-				<h4>LOGEATE CON TU CUENTA</h4>
-				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor
-			sit amet, consectetur.</p>
-			</div>
-			<div class="col-md-3 coupons-gd">
-				<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-				<h4>SELECCIONA EL ITEM</h4>
-				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor
-			sit amet, consectetur.</p>
-			</div>
-			<div class="col-md-3 coupons-gd">
-				<span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>
-				<h4>REALIZA EL PAGO</h4>
-				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor
-			sit amet, consectetur.</p>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-</div-->
 <!-- footer -->
 <div class="footer">
 	<div class="container">
@@ -661,10 +389,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<div class="clearfix"></div>
 		<p class="copy-right">&copy 2020 cyber-outlet. Todos los derechos reservados | Diseñado por <a href="http://w3layouts.com/">W3layouts/Grupo-6</a></p>
-	</div>
-</div>
+	<!--/div-->
+<!--/div-->
 <!-- //footer -->
-<!-- login -->
+<<!-- login -->
 			<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 				<div class="modal-dialog" role="document">
 					<div class="modal-content modal-info">
